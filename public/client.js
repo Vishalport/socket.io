@@ -15,10 +15,10 @@ textarea.addEventListener('keyup', (e) => {
 function sendMessage(message) {
     let msg = {
         user: name,
-        message: message.trim()
+        message: message.trim()  // using trim to reduce the extra white space...
     }
-    // Append 
-    appendMessage(msg, 'outgoing')
+    // Append the msg
+    appendMessage(msg, 'outgoing')  // A property set containing the list of messages to display on custom UI
     textarea.value = ''
     scrollToBottom()
 
